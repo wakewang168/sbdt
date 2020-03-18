@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-  <%= @news.title %>
   <% if I18n.locale == :en %>
+  <%= @news.title %>
 	<%= @news.body %>
 	<% else %>
+	<%= @news.title_cn %>
 	<%= @news.body_cn %>
   <% end %>
 
