@@ -1,3 +1,92 @@
-// Place all the styles related to the News controller here.
+// Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+// body {
+// 	margin:0;
+// 	padding:0;
+// }
+
+$color_1: #616161;
+$color_2: #ccc;
+$color_3: #FFF;
+$background_color_2: #616161;
+
+.postlink {
+	transition: all .5s;
+	text-decoration: none;
+	color: $color_1;
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid $color_1;
+	border-radius: 3px;
+	font-weight: medium;
+	&:hover {
+		text-decoration: none;
+		color: $color_3;
+		background:$background_color_2;
+	}
+
+}
+
+
+.postimg {
+	width: 100%;
+	transition: all .5s;
+}
+.section1 {
+	padding: 2rem 0;
+	margin-top: 2rem;
+	text-align: center;
+}
+.container2 {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+main {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	margin: 0 15px;
+}
+.head1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom:2rem;
+}
+.follow1 {
+	width: 20rem;
+}
+.follow2 {
+	width:10rem;
+}
+
+.singlePost {
+	position: relative;
+	overflow: hidden;
+	max-height: 400px;
+	height: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 2px 10px #CCC;
+	transition: all .5s;
+	border-radius: 3px;
+	padding:1rem;
+}
+
+
+
+@media (max-width:992px) {
+	main{
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap:20px;
+
+	}
+}
+@media (max-width:767px) {
+	main{
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap:15px;
+
+	}
+}
+

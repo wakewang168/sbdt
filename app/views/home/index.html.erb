@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 </title>
+	<meta name="description" content="一家专门设计、生产商用&工业级MEMS陀螺仪、IMUs、磁力计和加速度计的国内MEMS芯片领导厂商">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item active">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>	
+
+	<!--- Image slider -->
+<!-- <main> -->
+	<!-- <div class="container-fluid no-padding">
+		<div class="site-content-landing">
+			<div class="d-flex justify-content-left">
+				<div class="d-flex flex-column">
+					<h1 class="site-title" style="width: 70%;">Passion for developing high quality inertial MEMS Devices</h1>
+					<p class="site-desc" style="color:rgba(0, 0, 0, 65%)!important;">专注于惯性MEMS传感器技术</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+<div style="background-image: url(<%= asset_path('app/vr1.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 600px; text-align: center;">
+ 	<!-- <h2 class="centered"><%= t('splash') %></h2> -->
+</div>
+
+	<!-- Two Column Product Section  x3 -->
+
+	<div class="padding">
+		<div class="container">
+			<div class="row" style="padding-top: 5rem;padding-bottom: 5rem;">
+				<div class="col-sm-6">
+					<a href="products">
+						<%= image_tag "products/productlist.PNG", class: 'propic'%>
+					</a>					
+				</div>
+				<div class="col-sm-6 text-left" style="padding-left: 5rem;">
+					<h1 class="" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;"><%= t('pro2') %></h1>
+					<p class="lead" style="color: rgba(0,0,0,80%);"><%= t('prodes') %></p>
+					<a><%= link_to "产品中心", products_index_path, class: 'btn btn-primary' %></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="container">
+		<hr class="my-4">	
+	</div> -->
+	<!-- latest news section -->
+	<!-- <div class="padding">
+		<div class="container">
+			<div class="row">
+				<h2 style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 0.5rem; padding-top:2rem; padding-left: 2rem;">最新消息</h2>
+			</div>
+			<div class="row" style="padding-top: 0.5rem; padding-bottom: 3rem;">
+				<div class="col-sm-6 text-left" style="width: 40%;">
+					<h5 style="font-weight:bolder; color: rgba(0,0,0,80%);">2019-06-13</h3>
+					<p class="lead">Senodia was Invited to Attend 2019 National Mass Innovation and Entrepreneurship Week</p>
+					<a class="btn btn-primary" href="news#20190613" role="button">阅读全部</a>
+				</div>
+				<div class="col-sm-6" style="width: 40%";>
+					<h5 style="font-weight:bolder; color: rgba(0,0,0,80%);">2019-06-12</h3>
+					<p class="lead">Senodia Party Branch was Officially Established</p>
+					<a class="btn btn-primary" href="news#20190612" role="button">阅读全部</a>				
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	
+
+		
+	<!--- Recognition Logos --->
+	<div class="jumbotron jumbotron-fluid" style="background-color:#E2001A; background-color: rgba(227, 61, 50, 80%)!important; margin-bottom: 0;">
+  		<div class="container">
+  			<h1 class="text-center" style="color: #FFF!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;"><%= t('awa') %></h1>
+			<div class="row text-center" style="display: flex;
+    justify-content: space-between; align-items: center;">
+			  <div class="col-sm">
+			  	<%= image_tag "logos/EETimes-logo.png", class: 'awardslog', style:"align-items:center;"%>
+			  </div>
+			  <div class="col-sm">
+			  	<%= image_tag "logos/chinachip.png", class: 'awardslog'%>
+			  </div>
+			  <div class="col-sm">
+			  	<%= image_tag "logos/sica.png", class: 'awardslog'%>
+			  </div>
+			  <div class="col-sm">
+			  	<%= image_tag "logos/waic.png", class: 'awardslog'%>
+			  </div>
+			</div>
+  		</div>
+	</div>
+<div style="background-image: url(<%= asset_path('app/white.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 40vh;">
+</div>
+
+	
+	<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script
+  defer
+  src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+  crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

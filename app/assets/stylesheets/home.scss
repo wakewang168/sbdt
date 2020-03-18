@@ -1,0 +1,431 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$color_1: rgba(0, 0, 0, 0.8);
+$color_2: rgba(0,0,0,.8);
+$color_3: #3B4637;
+$color_4: #E2001A;
+$color_5: rgba(0, 0, 0, 60%);
+$color_6: #FFF;
+$color_7: #000;
+$color_8: #fff;
+$background_color_1: rgba(227, 61, 50, 80%);
+$background_color_2: #616161;
+$background_color_3: #fff;
+$background_color_4: #FFF;
+
+/* */
+/*---Media Queries --*/
+/*---Firefox Bug Fix --*/
+/*--- Fixed Background Image --*/
+/*--- Bootstrap Padding Fix --*/
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar-brand {
+	padding-left: 2rem; 
+	min-width: 10rem; 
+	max-width: 20rem;
+}
+.propic {
+	background-size: cover; 
+	width: 100%; 
+	object-fit: cover;
+}
+.prolink {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.apptitle {
+	color: $color_1 !important;
+	font-weight: lighter;
+}
+.nav-item {
+	color: $color_1 !important;
+	padding: 0rem .7rem 0rem .7rem !important;
+}
+.navbar-light {
+	.navbar-nav {
+		.nav-link {
+			color: $color_2;
+		}
+		.active {
+			>.nav-link {
+				color: $color_3 !important;
+				border-bottom: 3px solid #3B4637;
+			}
+		}
+		.nav-link.active {
+			color: $color_3 !important;
+			border-bottom: 3px solid #3B4637;
+		}
+		.nav-link.show {
+			color: $color_3 !important;
+			border-bottom: 3px solid #3B4637;
+		}
+		.show {
+			>.nav-link {
+				color: $color_3 !important;
+				border-bottom: 3px solid #3B4637;
+			}
+		}
+	}
+}
+.fit-image {
+	width: 100%;
+	object-fit: cover;
+	min-height: 600px;
+	max-height: 1000px;
+}
+.site-content-landing {
+	background-image: url(app/white.png);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 450px;
+}
+
+.site-content-tech {
+	background-image: url(app/vitmother.png);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 450px;
+}
+.site-title-tech {
+	width: 100%;
+}
+.site-content-news {
+	background-image: url(app/vr.png);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 400px;
+}
+.site-content-about {
+	background-image: url(app/fab.png);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 450px;
+}
+.site-content-pro {
+	background-image: url(products/productlist.png);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 400px;
+}
+.site-title {
+	color: $color_4 !important;
+	width: 40%;
+	text-transform: uppercase;
+	font-size: 40px;
+	padding-top: 5rem;
+	padding-left: 5rem;
+	font-weight: lighter;
+}
+.site-desc {
+	color: $color_5;
+	width: 40%;
+	font-size: 18px;
+	padding-left: 5rem;
+}
+.awardslog {
+	width: 15rem;
+}
+.footerimg {
+	width: 20rem;
+}
+.prods {
+	h3 {
+		padding-top: 1rem;
+		font-weight: lighter;
+		font-size: 40px;
+		text-transform: uppercase;
+		color: $color_4 !important;
+		text-decoration: none !important;
+		&:hover {
+			padding-top: 1rem;
+			font-weight: lighter;
+			font-size: 40px;
+			text-transform: uppercase;
+			color: $color_4 !important;
+			text-decoration: none !important;
+			border-bottom-style: none !important;
+		}
+	}
+	p {
+		color: $color_5;
+		font-size: 18px;
+		text-decoration: none !important;
+		&:hover {
+			color: $color_5;
+			font-size: 18px;
+			text-decoration: none !important;
+			border-bottom-style: none !important;
+		}
+	}
+}
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 95vw;
+  text-align:left;
+  transform: translate(-50%, -50%);
+  color: #E2001A!important; 
+  text-transform: uppercase; 
+  font-size: 56px; 
+  font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.info-box {
+	background-color: $background_color_1;
+	color: $color_6;
+	border-radius: 4px;
+	padding: 2rem;
+}
+.info-box2 {
+	color: $color_7;
+	border-radius: 4px;
+	padding: 2rem;
+}
+.btn-primary {
+	background-color: $background_color_2;
+	border: none;
+	width: 8rem;
+	transition: transform .5s ease;
+	&:hover {
+		background-color: $background_color_2;
+		transform: scale(1.05);
+		cursor: zoom-in;
+	}
+}
+.btn-submit {
+	background-color: $background_color_2;
+	border: none;
+	transition: transform .5s ease;
+	&:hover {
+		background-color: $background_color_2;
+		transform: scale(1.05);
+		cursor: zoom-in;
+	}
+}
+.popsty {
+	color: $color_1 !important;
+	text-align: center;
+	font-size: 18px;
+	font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.section {
+	padding: 10rem 0;
+	margin: 0;
+	padding: 0;
+}
+.content {
+	p {
+		transition: 0.5s;
+		cursor: pointer;
+		visibility: hidden;
+		transition: 0.5s;
+		transform: translateX(-50%) translateY(-50px);
+		opacity: 0;
+		&:hover {
+			background: #FFF;
+			opacity: 1;
+			visibility: visible;
+			transform: translateX(-50%) translateY(-50px);
+		}
+	}
+}
+.card-wrapper {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+.card-wrapper2 {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+}
+.card2 {
+	width: 15rem;
+	background-color: $background_color_3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+}
+// .card {
+// 	width: 15rem;
+// 	background-color: $background_color_3;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: center;
+// 	margin: 2rem 0;
+// 	.card-img {
+// 		width: 100%;
+// 		height: 16rem;
+		
+// 	}
+// 	.btn {
+// 		margin-bottom: 1.5rem;
+// 	}
+// }
+// .profile-img {
+// 	width: 7rem;
+// 	height: 7rem;
+// 	object-fit: cover;
+// 	border-radius: 50%;
+// 	margin-top: -7.5rem;
+// 	z-index: 999;
+// 	border: .5rem solid #FFF;
+// 	background-color: $background_color_4;
+// }
+.card-title {
+	color: $color_5;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+.card-text {
+	color: $color_5;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: lighter;
+	text-align: center;
+}
+.bottom-img {
+	width: 100%;
+	margin: 0;
+	height: 300px;
+	object-fit: cover;
+}
+footer {
+	width: 100%;
+	background-color: $background_color_1;
+	color: $color_8;
+	p {
+		font-size: 12px;
+	}
+}
+.card-img-overlay {
+	margin-top: 10rem !important;
+}
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: 0 !important;
+}
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#fixed {
+	background-image: url('img/mac.png');
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	will-change: transform;
+}
+[class*="col-"] {
+	padding: 1rem;
+}
+@media screen and (min-width: 700px) {
+	.card-wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.card {
+		margin: 2rem;
+	}
+}
+@media (max-width: 992px) {
+	.site-title {
+		font-size: 40px;
+		width: 40%;
+		padding-top: 3rem;
+		padding-left: 5rem;
+	}
+	.site-desc {
+		font-size: 18px;
+		width: 40%;
+		padding-left: 5rem;
+	}
+	.site-content {
+		height: 550px;
+	}
+}
+@media (max-width: 768px) {
+	.site-title {
+		font-size: 30px;
+		width: 50%;
+		padding-top: 3rem;
+		padding-left: 3rem;
+	}
+	.site-desc {
+		font-size: 17px;
+		width: 50%;
+		padding-left: 3rem;
+	}
+	.site-content {
+		height: 450px;
+	}
+}
+@media (max-width: 576px) {
+	.site-title {
+		font-size: 20px;
+		width: 60%;
+		padding-top: 1.5rem;
+		padding-left: 1.5rem;
+	}
+	.site-desc {
+		font-size: 14px;
+		width: 60%;
+		padding-left: 1.5rem;
+	}
+	.site-content {
+		height: 350px;
+	}
+}
