@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+  <%= @news.title %>
+  <% if I18n.locale == :en %>
+	<%= @news.body %>
+	<% else %>
+	<%= @news.body_cn %>
+  <% end %>
+
+
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_index_path %>
