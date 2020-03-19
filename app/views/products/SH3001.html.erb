@@ -1,2 +1,158 @@
-<h1>Products#SH3001</h1>
-<p>Find me in app/views/products/SH3001.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | SH3001</title>
+	<meta name="description" content="SH3001 is an inertial measurement unit, integrated with 3-axis gyroscope and 3-axis accelerometer.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>	
+
+<div class="container">
+	<div class="row justify-content-around align-items-center">
+		<%= image_tag "products/SH3001f.png", style: 'width: 10rem;display: block;
+    margin:0;'%>
+    <%= image_tag "products/SH3001b.png", style: 'width: 10rem;display: block;
+    margin:0;'%>
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+			<div class="info-box2" style="margin-bottom:5rem;margin-top: 3rem;">
+				<div class="row" style="margin-bottom:1rem;">
+					<div class="col">
+						<h1 style="color:rgba(0,0,0,80%);font-weight:bold;font-size: 38px;">SH3001</h1>
+					</div>
+				</div>
+				<div class="row">
+					<% if I18n.locale == :en %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Description</h3>
+						<p style="font-size: 16px;">SH3001 is an inertial measurement unit,integrated with 3-axis gyroscope and 3-axis accelerometer.It provides high precision data of real-time angular velocity and linear acceleration,applying to comsumer electronics application by virtue of small size and low power. SH3001 is capable of excellent temperature stability and high resolution over the operating temperature range (‐40°C ~ 85°C).</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Package & Size</h3>
+						<p style="font-size: 16px;">Package：14 Pins LGA<br>
+Size：2.5×3.0×0.9mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Features</h3>
+						<p style="font-size: 16px;">Gyro range of measurememt(°/s)：±125， ±250， ±500，±1000，±2000<br>
+Gyro sensitivity(LSB/°/sec)：262，131，65.5，32.8，16.4<br>
+Accelerometer range of measurement(g)： ±2，±4， ±8， ±16<br>
+Accelerometer sensitivity(LSB/g)：  16384，8192，4096，2048</p>
+						
+						<h3 style="color:#E2001A!important;font-size: 20px;">Applications</h3>
+						<p style="font-size: 16px;">Smart phone<br>
+						Tablet<br>
+						Multi-rotor UAV<br>
+						Cleaning robot<br>
+						Laser pen<br>
+						AR/VR<br>
+						Smart remote<br>
+						Smart Wearable Devices</p>
+					</div>
+					<% else %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品简介</h3>
+						<p style="font-size: 16px;">SH3001是一款六轴IMU(Inertial measurement unit)惯性测量单元。SH3001内部集成三轴陀螺仪以及三轴加速度计，尺寸小，功耗低，适用于消费电子市场应用，能提供高精度的实时角速度与线加速度数据。SH3001具有出色的温度稳定性，在-40℃到85℃的工作范围内能保持高分辨率。</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">封装形式和尺寸</h3>
+						<p style="font-size: 16px;">封装：14 Pins LGA<br>
+						尺寸：2.5×3.0×0.9mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品特性</h3>
+						<p style="font-size: 16px;">陀螺仪量程(dps)：±125， ±250， ±500，±1000，±2000<br>
+						陀螺仪灵敏度(LSB/°/s)：262，131，65.5，32.8，16.4<br>
+						加速度计量程(g): ±2，±4， ±8， ±16<br>
+						加速度计灵敏度(LSB/g):  16384，8192，4096，2048</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">典型应用</h3>
+						<p style="font-size: 16px;">智能手机
+						平板电脑<br>
+						多旋翼无人机<br>
+						智能扫地机<br>
+						翻页激光笔<br>
+						AR/VR<br>
+						智能遥控器<br>
+						智能手环</p>
+					</div>
+					<% end %>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End of datasheet section -->
+
+
+<div style="background-image: url(<%= asset_path('app/contr.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

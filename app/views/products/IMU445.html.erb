@@ -1,2 +1,176 @@
-<h1>Products#IMU445</h1>
-<p>Find me in app/views/products/IMU445.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | IMU445</title>
+	<meta name="description" content="深迪IMU 445模块是一个完整的惯性系统，包含三轴陀螺仪，三轴加速度计">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>	
+
+<div class="container">
+	<div class="row justify-content-around align-items-center">
+		<%= image_tag "products/IMUN.png", style: 'width: 10rem;display: block;
+    margin:0;'%>
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+			<div class="info-box2" style="margin-bottom:5rem;margin-top: 3rem;">
+				<div class="row" style="margin-bottom:1rem;">
+					<div class="col">
+						<h1 style="color:rgba(0,0,0,80%);font-weight:bold;font-size: 38px;">IMU445</h1>
+					</div>
+				</div>
+				<div class="row">
+					<% if I18n.locale == :en %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Description</h3>
+						<p style="font-size: 16px;">IMU 445 module is a complete inertial system, including 3-axis gyrpscope, 3-axis accelerometer. Combining industrial-grade gyroscope with algorithm, providing excellent dynamic performance. IMU 445 integrates multi-axis inertial sensor with industrial system by simple, efficient method. Factory completes testing and calibration for system integration.</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Package & Size</h3>
+						<p style="font-size: 16px;">Size：24.1×37.7×10.8mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Features</h3>
+						<p style="font-size: 16px;"><strong>Gyroscope</strong><br>
+						Dynamic Range：±250 dps<br>
+						Initial sensitivity：0.015 dps/LSB<br>
+						Temperature coefficient of sensitivity：±40 ppm/℃<br>
+						Initial offset error：±0.5 dps<br> 
+						Bias Instability：0.0028 dps<br>
+						Temperature coefficient of zero point：0.005  dps/℃<br>
+						<br>
+						<strong>Accelerometer</strong><br>
+						Dynamic Range：：±4 g<br>
+						Initial sensitivity：0.12  mg/LSB<br>
+						Temperature coefficient of sensitivity：±40 ppm/℃<br>
+						Initial offset error：±10 mg<br> 
+						Bias Instability：0.5 mg<br>
+						Temperature coefficient of zero point：0.06  mg/℃<br>
+						<br>Input voltage: + 5V <br>
+						Output interface: SPI / UART <br>
+						Working temperature: -40 ~ 85 ℃
+						</p>
+						
+						<h3 style="color:#E2001A!important;font-size: 20px;">Applications</h3>
+						<p style="font-size: 16px;">Stablilized platform<br>
+						Internet of vehicles and intelligent logistics<br>
+						Engineering machinery<br>
+						Robots</p>
+					</div>
+					<% else %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品简介</h3>
+						<p style="font-size: 16px;">深迪IMU 445模块是一个完整的惯性系统，包含三轴陀螺仪，三轴加速度计。IMU 445模块结合深迪工业级陀螺仪和算法，提供优秀的动态性能。IMU 445模块提供简单有效的方法，将多轴惯性传感集成到工业系统。工厂完成测试和标定，方便系统集成。</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">封装形式和尺寸</h3>
+						<p style="font-size: 16px;">尺寸：24.1×37.7×10.8mm³</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">典型应用</h3>
+						<p style="font-size: 16px;">稳定平台<br>
+						车联网和智能物流<br>
+						工程机械<br>
+						机器人</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品特性</h3>
+						<p style="font-size: 16px;"><strong>陀螺仪</strong><br>
+						动态范围：±250 dps<br>
+						初始灵敏度：0.015 dps/LSB<br>
+						灵敏度温度系数：±40 ppm/℃<br>
+						初始偏移误差：±0.5 dps<br>
+						零偏不稳定性：0.0028 dps<br>
+						偏差温度系数：0.005  dps <br>
+						<br>
+						<strong>加速度计</strong><br>
+						动态范围：±4 g <br>
+						初始灵敏度：0.12  mg/LSB <br>
+						灵敏度温度系数：±40 ppm/℃ <br>
+						初始偏移误差：±10 mg<br>
+						零偏不稳定性：0.5 mg<br>
+						偏差温度系数：0.06  mg/℃<br>
+						<br>输入电压：+5V<br>  
+						输出接口：SPI/UART<br>
+						工作温度：-40~85℃
+						</p>
+					</div>
+					<% end %>
+
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End of datasheet section -->
+
+
+<div style="background-image: url(<%= asset_path('app/robo.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

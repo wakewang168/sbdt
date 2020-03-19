@@ -1,2 +1,190 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | 产品中心</title>
+	<meta name="description" content="惯性传感器 - 商用&工业级MEMS陀螺仪、IMUs、磁力计">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>			
+<section>
+	<div class="jumbotron jumbotron-fluid" style="background-color: rgba(227, 61, 50, 80%)!important; background-color: #E2001A; width: 100vw;">
+		<div class="container">
+  			<h1 class="text-center" style="color: #FFF!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;"><%= t('is') %></h1>
+  		</div>	
+	</div>
+</section>
+<section>
+	<div class="container" style="padding-top:3rem;">
+		<div class="text-center">
+			<h1 style="color: #E2001A!important; text-transform: uppercase; font-size: 35px; font-weight: lighter; padding-bottom: 1rem; letter-spacing: 3px;"><%= t('mg') %></h1>
+		</div>
+		<div class="card-wrapper">
+			<div class="card">
+				<%= image_tag "products/SZ030H.png", class: 'card-img'%>
+				<h1 class="card-title">SZ030H</h1>
+				<p class="card-text"><%= t('za') %></p>
+				<a><%= link_to t('lm'), products_SZ030H_path, class: 'btn btn-primary' %></a>
+			</div>
+			<div class="card">
+				<%= image_tag "products/SZ030HS.png", class: 'card-img'%>
+				<h1 class="card-title">SZ030HS</h1>
+				<p class="card-text"><%= t('za') %></p>
+				<a><%= link_to t('lm'), products_SZ030HS_path, class: 'btn btn-primary' %></a>
+			</div>
+			<div class="card">
+				<%= image_tag "products/SX030HS.png", class: 'card-img'%>
+				<h1 class="card-title">SX030HS</h1>
+				<p class="card-text"><%= t('xa') %></p>
+				<a><%= link_to t('lm'), products_SX030HS_path, class: 'btn btn-primary' %></a>
+			</div>
+			<div class="card">
+				<%= image_tag "products/SZ007A.png", class: 'card-img'%>
+				<h1 class="card-title">SZ007A</h1>
+				<p class="card-text"><%= t('ig') %></p>
+				<a><%= link_to t('lm'), products_SZ007A_path, class: 'btn btn-primary' %></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container" style="padding-top:3rem;">
+		<div class="text-center">
+			<h1 class="lang" key="pro" style="color: #E2001A!important; text-transform: uppercase; font-size: 35px; font-weight: lighter; padding-bottom: 1rem; letter-spacing: 3px;"><%= t('m') %></h1>
+		</div>
+		<div class="card-wrapper">
+			<div class="card ">
+				<%= image_tag "products/ST480f.png", class: 'card-img'%>
+				<h1 class="card-title">ST480M</h1>
+				<p class="card-text"><%= t('tams') %></p>
+				<a><%= link_to t('lm'), products_ST480M_path, class: 'btn btn-primary' %></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container" style="padding-top:3rem;">
+		<div class="text-center">
+			<h1 class="lang" key="pro" style="color: #E2001A!important; text-transform: uppercase; font-size: 35px; font-weight: lighter; padding-bottom: 1rem; letter-spacing: 3px;"><%= t('imu') %></h1>
+		</div>
+		<div class="card-wrapper">
+			<div class="card">
+				<%= image_tag "products/SH3001f1.png", class: 'card-img'%>
+				<h1 class="card-title">SH3001</h1>
+				<p class="card-text"><%= t('saimu') %></p>
+				<a><%= link_to t('lm'), products_SH3001_path, class: 'btn btn-primary' %></a>
+			</div>
+			<div class="card">
+				<%= image_tag "products/SH200Q.png", class: 'card-img', style: "width:13rem!important;"%>
+				<h1 class="card-title">SH2100</h1>
+				<p class="card-text"><%= t('saimu') %></p>
+				<a><%= link_to t('lm'), products_SH2100_path, class: 'btn btn-primary' %></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="jumbotron jumbotron-fluid" style="background-color: rgba(227, 61, 50, 80%)!important; background-color: #E2001A; margin-top: 2rem; width: 100vw;">
+  		<div class="container">
+  			<h1 class="text-center" style="color: #FFF!important; text-transform: uppercase; font-size: 50px;  font-weight: lighter;"><%= t('imum')%></h1>
+  		</div>
+  	</div>
+  </section>
+  <section>
+	<div class="container-fluid" style="padding-top:1.5rem; padding-bottom: 3rem;">
+		<div class="card-wrapper">
+			<div class="card">
+				<%= image_tag "products/IMUN.png", class: 'card-img'%>
+				<h1 class="card-title">IMU445</h1>
+				<p class="card-text"><%= t('imumd')%></p>
+				<a><%= link_to t('lm'), products_IMU445_path, class: 'btn btn-primary' %></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="jumbotron jumbotron-fluid" style="background-color: #f2f2f2;margin-bottom: 0; width: 100vw;">
+  		<div class="container">
+  			<h1 class="text-center" style="color: rgba(227, 61, 50, 80%)!important; color:#E2001A; text-transform: uppercase; font-size: 50px;  font-weight: lighter;"><%= t('algo')%></h1>
+  			<p class="card-text"><%= t('algod')%></p>
+  		</div>
+  	</div>
+  	
+</section>
+<div style="background-image: url(<%= asset_path('app/white.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 40vh;">
+</div>
+	
+	<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

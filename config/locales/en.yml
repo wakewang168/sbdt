@@ -48,3 +48,24 @@ en:
   cp: "Copyright © 2016 Senodia Technologies ( Shanghai ) Co. Ltd."
   rm: "Read More"
   ln: "Latest News"
+  is: "inertial sensors"
+  mg: "mems gyroscope"
+  za: "Z-Axis Gyroscope"
+  lm: "Learn More"
+  xa: "X-Axis Gyroscope"
+  ig: "Industrial & Automobile-Grade MEMS Gyroscope"
+  m: "Magnetometer"
+  tams: "3-Axis Mag-Sensor"
+  imu: "imu"
+  imum: "IMU Module"
+  saimu: "6-Axis IMU"
+  imumd: "Industrial and Automobile-Grade Multi-Axis Fusion"
+  algo: "Algorithm"
+  algod: "We provide industrial-grade and consumer-grade sensors, and relevant application algorithm,application modules and solutions,including AHRS modules, IMU modules, angle output modules, navigation modules, sensor fusion algorithms of gyroscopes, accelerometers, mag-sensors, as well as pattern recognition algorithms, intelligent learning algorithms, etc."
+
+
+
+
+
+
+

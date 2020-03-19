@@ -1,2 +1,164 @@
-<h1>Products#SZ007A</h1>
-<p>Find me in app/views/products/SZ007A.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | SZ007A</title>
+	<meta name="description" content="SZ007A是一款Z轴角速度传感器，又称Z轴陀螺仪">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>		
+
+<div class="container">
+	<div class="row justify-content-around align-items-center">
+		<!-- <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 justify-content-around align-items-center" style="align-content: center;display: block; margin:0;"> -->
+			<%= image_tag "products/SZ007A.png", style: "width: 15rem;display: block"%>
+			<%= image_tag "products/SZ007b.png", style: "width: 15rem;display: block"%>
+		<!-- </div> -->
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+			<div class="info-box2" style="margin-bottom:5rem;margin-top: 3rem;">
+				<div class="row" style="margin-bottom:1rem;">
+					<div class="col">
+						<h1 style="color:rgba(0,0,0,80%);font-weight:bold;font-size: 38px;">SZ007A</h1>
+					</div>
+				</div>
+				<div class="row">
+					<% if I18n.locale == :en %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Description</h3>
+						<p style="font-size: 16px;">SZ007A is a Z-axis angular rate sensor (Gyroscope),delivers output voltage proportional to angular rate perpendicular to the assembly surface. A single CLCC package contains a high performance silicon micro machined sensor with signal conditioning circuitry.It is a industrial-grade gyroscope with high precision.</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Package & Size</h3>
+						<p style="font-size: 16px;">Package:（CLCC32）&（PLCC32）<br>
+						Size: 10.668×10.668×2.9 mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Features</h3>
+						<p style="font-size: 16px;">Analog/digital（SPI)<br>
+						Zero output time stability：17  °/h<br>
+						Vibration sensitivity < 0.1 dps/g<br>
+						Range of measurememt：±75 dps，±150 dps，±300 dps<br>
+						In-chip EEPROM adjustment<br>
+						Built-in temperature sensor<br>
+						Temperature：-40℃~85℃<br>
+					(dps = degree per second)</p>
+						
+						<h3 style="color:#E2001A!important;font-size: 20px;">Applications</h3>
+						<p style="font-size: 16px;">Integrated navigation
+						AHRS<br>
+						Robots<br>
+						Automobile navigation and security system<br>
+						Precision agriculture<br>
+						Medical and rehabilitation equipment<br>
+						Internet of vehicles and intelligent logistics<br>
+						Engineering mechinery</p>
+					</div>
+					<% else %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品简介</h3>
+						<p style="font-size: 16px;">SZ007A是一款Z轴角速度传感器，又称Z轴陀螺仪。SZ007的输出电压与绕垂直于安装表面的轴旋转的角速度成正比。 它将高性能的硅微机械传感器和信号处理电路集成在单芯片封装中，是一款工业级高精度陀螺仪。</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">封装形式和尺寸</h3>
+						<p style="font-size: 16px;">封装：陶瓷（CLCC32）和塑料封装（PLCC32）<br>
+						尺寸: 10.668×10.668×2.9 mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品特性</h3>
+						<p style="font-size: 16px;">模拟/数字（SPI接口）输出<br>
+						零偏不稳定性：17 º/h<br>
+						振动灵敏度 < 0.1 º/s/g<br>
+						测量范围可选：±75 dps，<br>
+						±150 dps，±300 dps<br>
+						片内EEPROM调整<br>
+						内置温度传感器<br>
+						工作温度范围：-40℃~85℃</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">典型应用</h3>
+						<p style="font-size: 16px;">组合导航<br>
+						航姿参考系统<br>
+						机器人<br>
+						汽车导航与安全系统<br>
+						精准农业<br>
+						医疗和康复器械<br>
+						车联网和智能物流<br>
+						工程机械</p>
+					</div>
+					<% end %>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of datasheet section -->
+<!-- Img slider (applications) -->
+
+<div style="background-image: url(<%= asset_path('app/xray.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
