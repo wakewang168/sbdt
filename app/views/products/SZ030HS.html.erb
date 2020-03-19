@@ -1,2 +1,150 @@
-<h1>Products#SZ030HS</h1>
-<p>Find me in app/views/products/SZ030HS.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | SZ030HS</title>
+	<meta name="description" content="SZ030HS is a consumer-grade Z-axis gyroscope, also known as Z‐Axis angular rate sensor.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>	
+
+<div class="container">
+	<div class="row justify-content-around align-items-center">
+		<%= image_tag "products/SZ030HS.png", style: 'width: 10rem;display: block;
+    margin:0;'%>
+    
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+			<div class="info-box2" style="margin-bottom:5rem;margin-top: 3rem;">
+				<div class="row" style="margin-bottom:1rem;">
+					<div class="col">
+						<h1 style="color:rgba(0,0,0,80%);font-weight:bold;font-size: 38px;">SZ030HS</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<% if I18n.locale == :en %> 
+						<h3 style="color:#E2001A!important;font-size: 20px;">Description</h3>
+						<p style="font-size: 16px;">SZ030HS is a consumer-grade Z-axis gyroscope,also known as Z‐Axis angular rate sensor. A single QFN package contains a high performance silicon micro machined sensor with signal conditioning circuitry.The SZ030HS delivers analog output signal proportional to angular rate perpendicular to the assembly surface,and provides excellent temperature stability and high resolution over the operating temperature range (‐20°C ~ 85°C). Packaged by SOP8, it has ±1000 °/s full scale and analog output.</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Package & Size</h3>
+						<p style="font-size: 16px;">Package：（SOP）<br>
+						Size：7.9×5.24×2.1mm³</p>
+						<% else %>
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品简介</h3>
+						<p style="font-size: 16px;">SZ030HS是消费级Z轴陀螺仪，又称Z轴角速度传感器。它将高性能的硅微机械传感器和信号处理电路集成在单芯片封装中，其输出与绕垂直于安装表面的轴旋转的角速度成正比。SZ030HS具有出色的温度稳定性，在-20℃到85℃的工作范围内能保持高分辨率。SZ030HS为SOP8封装，提供±1000º/s的满量程与模拟输出。</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">封装形式和尺寸</h3>
+						<p style="font-size: 16px;">封装：小外型封装（SOP）<br>
+						尺寸：7.9×5.24×2.1mm³</p>
+						<% end %>
+					</div>
+					<div class="col">
+						<% if I18n.locale == :en %>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Features</h3>
+						<p style="font-size: 16px;">Analog output/Digital output（IIC）<br>
+						Supply voltage：2.2~5 V<br>
+						Full scale range：ZOUT: ±1000 dps<br>
+						Low power：2.7 mA<br>
+						Temperature：-20~85 ℃<br>
+						Built-in 11 bit ADC</p>
+						
+						<h3 style="color:#E2001A!important;font-size: 20px;">Applications</h3>
+						<p style="font-size: 16px;">Toy helicopter<br>
+						Intelligent toy<br>
+						Handheld device</p>
+						<% else %>
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品特性</h3>
+						<p style="font-size: 16px;">模拟输出/数字输出（IIC）<br>
+						供电电压：2.2~5 V<br>
+						测量范围：ZOUT: ±1000 dps<br>
+						低功耗：2.7 mA<br>
+						工作温度范围：-20~85 ℃<br>
+						内置 11 bit ADC</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">典型应用</h3>
+						<p style="font-size: 16px;">玩具直升机<br>
+						智能玩具<br>
+						手持设备</p>
+						<% end %>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End of datasheet section -->
+
+
+<div style="background-image: url(<%= asset_path('app/helisv1.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

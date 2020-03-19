@@ -24,10 +24,10 @@
 			
 		<div class="collapse navbar-collapse" id="navbarMenu">
 			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
 				</li>
 				<li class="nav-item">
@@ -116,7 +116,7 @@
 				<a><%= link_to t('lm'), products_SH3001_path, class: 'btn btn-primary' %></a>
 			</div>
 			<div class="card">
-				<%= image_tag "products/SH200Q.png", class: 'card-img'%>
+				<%= image_tag "products/SH200Q.png", class: 'card-img', style: "width:13rem!important;"%>
 				<h1 class="card-title">SH2100</h1>
 				<p class="card-text"><%= t('saimu') %></p>
 				<a><%= link_to t('lm'), products_SH2100_path, class: 'btn btn-primary' %></a>
@@ -128,7 +128,7 @@
 <section>
 	<div class="jumbotron jumbotron-fluid" style="background-color: rgba(227, 61, 50, 80%)!important; background-color: #E2001A; margin-top: 2rem; width: 100vw;">
   		<div class="container">
-  			<h1 class="text-center" style="color: #FFF!important; text-transform: uppercase; font-size: 50px;  font-weight: lighter;">IMU模块</h1>
+  			<h1 class="text-center" style="color: #FFF!important; text-transform: uppercase; font-size: 50px;  font-weight: lighter;"><%= t('imum')%></h1>
   		</div>
   	</div>
   </section>
@@ -138,7 +138,7 @@
 			<div class="card">
 				<%= image_tag "products/IMUN.png", class: 'card-img'%>
 				<h1 class="card-title">IMU445</h1>
-				<p class="card-text">工业和汽车级多轴融合惯性测量模块</p>
+				<p class="card-text"><%= t('imumd')%></p>
 				<a><%= link_to t('lm'), products_IMU445_path, class: 'btn btn-primary' %></a>
 			</div>
 		</div>
@@ -148,8 +148,8 @@
 <section>
 	<div class="jumbotron jumbotron-fluid" style="background-color: #f2f2f2;margin-bottom: 0; width: 100vw;">
   		<div class="container">
-  			<h1 class="text-center" style="color: rgba(227, 61, 50, 80%)!important; color:#E2001A; text-transform: uppercase; font-size: 50px;  font-weight: lighter;">算法</h1>
-  			<p class="card-text">我们提供工业级和消费级传感器，以及相关的应用算法，应用模块和解决方案。包括AHRS模块，IMU模块，角度输出模块，导航模块；传感器融合算法，模式识别算法，智能学习算法等。</p>
+  			<h1 class="text-center" style="color: rgba(227, 61, 50, 80%)!important; color:#E2001A; text-transform: uppercase; font-size: 50px;  font-weight: lighter;"><%= t('algo')%></h1>
+  			<p class="card-text"><%= t('algod')%></p>
   		</div>
   	</div>
   	

@@ -1,2 +1,178 @@
-<h1>Products#ST480M</h1>
-<p>Find me in app/views/products/ST480M.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | ST480M</title>
+	<meta name="description" content="ST480M是一款三轴电子磁强计，又称三轴地磁传感器">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+			</ul>
+		</div>
+	</nav>		
+</header>		
+
+<div class="container">
+	<div class="row justify-content-around align-items-center">
+		<!-- <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 justify-content-around align-items-center" style="align-content: center;display: block; margin:0;"> -->
+			<%= image_tag "products/ST480f.png", style: "width: 15rem;display: block"%>
+			<%= image_tag "products/ST480b.png", style: "width: 15rem;display: block"%>
+		<!-- </div> -->
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+			<div class="info-box2" style="margin-bottom:5rem;margin-top: 3rem;">
+				<div class="row" style="margin-bottom:1rem;">
+					<div class="col">
+						<h1 style="color:rgba(0,0,0,80%);font-weight:bold;font-size: 38px;">ST480M</h1>
+					</div>
+				</div>
+				<div class="row">
+					<% if I18n.locale == :en %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Description</h3>
+						<p style="font-size: 16px;">The ST480M is an integrated 3‐axis magnetometer with signal processing circuitry and integrated IIC interface. It provides excellent temperature stability and high resolution over the whole operating temperature range (‐40°C ~ 85°C).<br>
+						The ST480M delivers output signal proportional to magnetic field it measures on each axis. Meanwhile, it provides an IIC digital output. Factory trimmed scale factors eliminate the need for external active components and end‐user calibration.</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Package & Size</h3>
+						<p style="font-size: 16px;">ST480MC<br>
+							Size: 1.28×1.28×0.5 mm³<br>
+							Packaging: 8pin WLCSP<br>
+							<br>
+							ST480MS<br>
+							Size: 0.95×0.95×0.5 mm³<br>
+							Packaging: 4pin WLCSP</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Features</h3>
+						<p style="font-size: 16px;">ST480MC<br>
+						Range of measurememt：±48 gauss<br>
+						Resolution ratio：0.15μT/LSB（X/Y-axis），0.25μT/LSB（Z-axis）<br>
+						Temperature：-40~85℃<br>
+						Communication method: IIC/SPI<br>
+						Supply voltage： 2.2~3.6 V<br><br>
+						ST480MS<br>
+						Range of measurememt：±49 gauss<br>
+						Resolution ratio：0.15μT/LSB<br>
+						Temperature：-40~85℃<br>
+						Communication method: IIC<br>
+						Supply voltage：1.65~1.95 V
+						</p>
+						
+						<h3 style="color:#E2001A!important;font-size: 20px;">Applications</h3>
+						<p style="font-size: 16px;">E-compass<br>
+						Smart phone<br>
+						Tablets<br>
+						Hand-held devices</p>
+					</div>
+					<% else %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品简介</h3>
+						<p style="font-size: 16px;">ST480M是一款三轴电子磁强计，又称三轴地磁传感器。其输出电压与在各个轴向的磁场强度成正比。 ST480M内部集成信号处理电路和IIC接口。在-40℃到85℃的工作范围内能保持高分辨率</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">封装形式和尺寸</h3>
+						<p style="font-size: 16px;">ST480MC<br>
+							尺寸: 1.28×1.28×0.5 mm³<br>
+							封装: 8pin WLCSP<br>
+							<br>
+							ST480MS<br>
+							尺寸: 0.95×0.95×0.5 mm³ <br>
+							封装: 4pin WLCSP</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品特性</h3>
+						<p style="font-size: 16px;">ST480MC<br>
+						测量范围：±48 gauss<br>
+						分辨率：0.15μT/LSB（X/Y轴），0.25μT/LSB（Z轴）<br>
+						工作温度范围：-40~85℃<br>
+						通讯方式：IIC/SPI<br> 
+						供电电压： 2.2~3.6 V<br><br>
+						ST480MS<br>
+						测量范围：±49 gauss<br>
+						分辨率：0.15μT/LSB<br>
+						工作温度范围：-40~85℃<br>
+						通讯方式：IIC<br>
+						供电电压： 1.65~1.95 V
+						</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">典型应用</h3>
+						<p style="font-size: 16px;">电子罗盘<br>
+						智能手机<br>
+						平板电脑<br>
+						手持设备</p>
+					</div>
+					<% end %>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of datasheet section -->
+<!-- Img slider (applications) -->
+<div style="background-image: url(<%= asset_path('app/ecomp.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script>
+</body>
+</html>

@@ -59,6 +59,10 @@ en:
   imu: "imu"
   imum: "IMU Module"
   saimu: "6-Axis IMU"
+  imumd: "Industrial and Automobile-Grade Multi-Axis Fusion"
+  algo: "Algorithm"
+  algod: "We provide industrial-grade and consumer-grade sensors, and relevant application algorithm,application modules and solutions,including AHRS modules, IMU modules, angle output modules, navigation modules, sensor fusion algorithms of gyroscopes, accelerometers, mag-sensors, as well as pattern recognition algorithms, intelligent learning algorithms, etc."
+
 
 
 
