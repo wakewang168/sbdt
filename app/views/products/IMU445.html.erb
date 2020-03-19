@@ -31,21 +31,28 @@
 					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
 				</li>
 				<li class="nav-item">
-					<a><%= link_to t('app'), news_index_path, class: 'nav-link' %></a>
+					<a><%= link_to t('app'), applications_index_path, class: 'nav-link' %></a>
 				</li>
 				<li class="nav-item">
-					<a><%= link_to t('tech'), news_index_path, class: 'nav-link' %></a>
+					<a><%= link_to t('tech'), technology_index_path, class: 'nav-link' %></a>
 				</li>
 				<li class="nav-item">
 					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
 				</li>
 				<li class="nav-item">
-					<a><%= link_to t('abt'), news_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+					<a><%= link_to t('abt'), about_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
 				</li>
+				<%= content_tag :li do %>
+					<a class="lan"><%= link_to "EN", locale: :en %></a>
+				<% end unless current_page?(locale: :en)%>
+				
+				<%= content_tag :li do %>
+					<a class="lan"><%= link_to "中文", locale: :"zh-CH"%></a>
+				<% end unless current_page?(locale: :"zh-CH")%>
 			</ul>
 		</div>
 	</nav>		
-</header>	
+</header>		
 
 <div class="container">
 	<div class="row justify-content-around align-items-center">

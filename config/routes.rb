@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'technology/index'
+  get 'about/index'
+  get 'applications/index'
   get 'products/index'
   get 'products/IMU445'
   get 'products/SH2100'
