@@ -42,11 +42,11 @@
 					<a><%= link_to t('abt'), about_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
 				</li>
 				<%= content_tag :li do %>
-					<a class="lan"><%= link_to "EN", locale: :en %></a>
+					<%= link_to "EN", locale: :en %>
 				<% end unless current_page?(locale: :en)%>
 				
 				<%= content_tag :li do %>
-					<a class="lan"><%= link_to "中文", locale: :"zh-CH"%></a>
+					<%= link_to "中文", locale: :"zh-CH"%>
 				<% end unless current_page?(locale: :"zh-CH")%>
 			</ul>
 		</div>
