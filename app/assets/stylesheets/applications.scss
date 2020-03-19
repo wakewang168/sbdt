@@ -1,0 +1,364 @@
+// Place all the styles related to the Applications controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$color_1: rgba(0, 0, 0, 0.8);
+$color_2: #E2001A;
+$color_3: #000;
+$background_color_1: #fff;
+$background_color_2: #FFF;
+$background_color_3: #E2001A;
+
+/**,
+*::before,
+*::after {
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}*/
+/*@import  url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+*/
+/*body {
+  background: #39393A;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}*/
+/*em {
+  font-style: normal;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+
+section .center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button {
+  position: relative;
+  background: #E75A7C;
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  border-radius: 50em;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+span,
+em,
+i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+span {
+  overflow: hidden;
+}
+
+.button em {
+  top: 0;
+  line-height: 60px;
+}
+
+.button i {
+  top: 100%;
+  line-height: 60px;
+}
+
+.button:hover em,
+.button.hover em{
+  top: -100%;
+}
+
+.button:hover i,
+.button.hover i{
+  top: 0%;
+}
+
+em,
+i {
+  transition: top 0.3s;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.button::before {
+  content: 'This is where we put info';
+  width: 160px;
+  height: 60px;
+  background: #0E84A1;
+  border-radius: 0.25em;
+  bottom: 90px;
+  line-height: 60px;
+  left: calc(50% - 80px);
+  font-size: 15px;
+}
+
+.button::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  border-top-color: #0E84A1;
+  bottom: 70px;
+  left: calc(50% - 10px);
+}
+
+.button:hover::before,
+.button:hover::after,
+.button.hover::before,
+.button.hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover::before,
+.button.hover::before{
+  bottom: 80px;
+}
+
+.button:hover::after,
+.button.hover::after{
+  bottom: 60px;
+}*/
+section {
+	background-color: $background_color_1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.containerapp {
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 1rem 1.5rem;
+}
+.accordion-item {
+	background-color: $background_color_2;
+	border-radius: .4rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-shadow: .5rem 1px .5rem rgba(0,0,0,.1);
+	&:last-of-type {
+		margin-bottom: 5rem;
+	}
+	&:target {
+		.answer {
+			max-height: 80rem;
+		}
+		.accordion-link {
+			.ion-md-add {
+				display: none;
+			}
+			.ion-md-remove {
+				display: block;
+			}
+		}
+	}
+}
+.accordion-link {
+	color: $color_1 !important;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: lighter;
+	text-decoration: none;
+	width: 100%;
+	background-color: $background_color_2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+	&:hover {
+		text-decoration: none !important;
+	}
+	i {
+		color: $color_2;
+		padding: .5rem;
+	}
+	.ion-md-remove {
+		display: none;
+	}
+}
+.answer {
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: $background_color_2;
+	transition: max-height 658ms;
+	&::before {
+		content: "";
+		position: absolute;
+		width: .3rem;
+		height: 90%;
+		background-color: $background_color_3;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	p {
+		color: $color_3 !important;
+		font-size: 18px;
+		font-weight: lighter;
+		padding: 2rem;
+	}
+}
+.appmodel {
+	color: #E2001A!important; 
+	text-transform: uppercase; 
+	font-size: 50px; 
+	font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+#site-content-app {
+	background-image: url(app/vr.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 400px;
+}
+#site-content-app1 {
+	background-image: url(app/drone-camera1.png);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 400px;
+}
+#site-content-app2 {
+	background-image: url(app/nologocar.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+	height: 400px;
+}
+.site-titleau {
+	 color: #FFF!important;
+  // width: 40%;
+  text-transform: uppercase;
+  font-size: 62px;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-weight: lighter;
+}
+.site-titlecon {
+	 color: #E2001A!important;
+  // width: 40%;
+  text-transform: uppercase;
+  font-size: 62px;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-weight: lighter;
+}
+// .appcon {
+//   position: relative;
+//   text-align: center;
+//   color: white;
+// }
+
+// .apppic {
+// 	width:100vw;
+// 	height: 400px; 
+// 	margin-bottom: 0; 
+// 	// margin-top: 3rem; 
+// 	background-position: center;
+// 	background-size: cover;
+// }
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 95vw;
+  text-align:left;
+  transform: translate(-50%, -50%);
+  color: #E2001A!important; 
+  text-transform: uppercase; 
+  font-size: 56px; 
+  font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.centerede {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 90vw;
+  text-align:left;
+  transform: translate(-50%, -50%);
+  color: #E2001A!important; 
+  text-transform: uppercase; 
+  font-size: 56px; 
+  font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.centered3 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #E2001A!important; 
+  text-transform: uppercase; 
+  font-size: 56px; 
+  font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.centered1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF!important; 
+  text-transform: uppercase; 
+  font-size: 62px; 
+  font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.centered2 {
+	position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF!important; 
+  text-transform: uppercase; 
+  font-size: 62px; 
+  font-weight: lighter;
+	&:hover {
+		text-decoration: none;
+	}
+}

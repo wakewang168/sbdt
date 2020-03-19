@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Senodia Technologies | 深迪半导体 | Applications</title>
+	<meta name="description" content="We supply MEMS devices to a broad range of conumer electronics & automotive industry.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="animated.css">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('app'), applications_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), technology_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), about_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+				<%= content_tag :li do %>
+					<a class="lan"><%= link_to "EN", locale: :en %></a>
+				<% end unless current_page?(locale: :en)%>
+				
+				<%= content_tag :li do %>
+					<a class="lan"><%= link_to "中文", locale: :"zh-CH"%></a>
+				<% end unless current_page?(locale: :"zh-CH")%>
+			</ul>
+		</div>
+	</nav>		
+</header>		
+
+	<!--- Image slider -->
+<!-- <main> -->
+<!-- <div class="container-fluid no-padding">
+	<div id="site-content-app" style="height:450px;">
+		<div class="d-flex justify-content-right">
+			<div class="d-flex flex-column">
+				<h1 class="site-title">Applications</h1>
+				<p class="site-desc">We supply MEMS devices to a broad rage of consumer electronics and for the automobile & logistics industry.</p>
+			</div>
+		</div>
+	</div>
+</div> -->
+<!-- <div class="container-fluid no-padding">
+	<div id="site-content-app" style="height:450px;">
+		<div class="d-flex justify-content-right">
+			<div class="d-flex flex-column">
+				<h1 class="site-title" width="100%">Applications</h1>
+				<p class="site-desc"></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+ -->
+
+ <div style="width: 100vw;">
+ <div style="background-image: url(<%= asset_path('app/drone-camera1.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; text-align: center;">
+ 	<% if I18n.locale == :en %>
+ 	<h2 class="centered1">Consumer electronics</h2>
+ 	<% else %>
+ 	<h2 class="centered1">消费电子</h2>
+ 	<% end %>
+</div>
+
+<section>
+	<div class="containerapp">
+		<div class="container" style="width: auto;">
+			<div class="row">
+				<% if I18n.locale == :en %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">Augmented reality</h2>
+				<p><b style="font-weight: bold;color:#3B4637;font-size:18px;">What is AR</b><br><br>Augmented reality (AR) is a live direct or indirect view of a physical, real-world environment whose elements are augmented (or supplemented) by computer-generated sensory input such as sound, video, graphics or GPS data. It is related to a more general concept called mediated reality, in which a view of reality is modified (possibly even diminished rather than augmented) by a computer. As a result, the technology functions by enhancing one’s current perception of reality. By contrast, virtual reality replaces the real world with a simulated one. Augmentation is conventionally in real-time and in semantic context with environmental elements, such as sports scores on TV during a match. With the help of advanced AR technology (e.g. adding computer vision and object recognition) the information about the surrounding real world of the user becomes interactive and digitally manipulable. Information about the environment and its objects is overlaid on the real world. This information can be virtualor real, e.g. seeing other real sensed or measured information such as electromagnetic radio waves overlaid in exact alignment with where they actually are in space.<br><br><b style="font-weight: bold;color:#3B4637;font-size:18px;">AR for Smart Phone</b><br><br>Currently, most of smart phones got the application in AR, whose application principle is similarly the same: Open GPS or AGPS for location, connect map server by built-in digital compass to confirm the building which the camera points to, what you should do is to walk straight to the certain position. The camera connects the virtual world with the reality.<br>
+				</p>
+				<% else %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">增强实境</h2>
+				<p><b style="color:#3B4637;font-size:18px;">什么是增强实境</b><br><br>
+
+				所谓增强实境（Augmented reality，下面简称AR），又被译为扩增现实，是一种结合虚拟化技术再来观察世界的方式。<br>
+				直接来看，AR能为我们提供现实中无法直接获知的信息。但是，更深层次来讲，这种信息实际上又让每个人眼中的世界更加多样性。同样的大楼在我们的AR视线里，会披上完全不同的"信息外套”，这或许又是一种“长尾现象”。另外，相隔万里的两座百货大楼，在地理上没有任何关联，可是却在AR中可以以信息的形式连接到一起。这些都是目前AR已经显现出来的一些特点。当然随着技术的发展，未来的AR可能会更加先进。<br><br>
+
+				<b style="color:#3B4637;font-size:18px;">手机上的增强实境</b><br><br>
+
+				在目前主流的智能手机上，已经出现了不少的增强实境的应用。
+				大部分的增强实境的应用原理都近似相同：打开GPS或者AGPS进行定位后，通过手机内置数字罗盘，并连接上地图服务器，就可以确定你手机摄像头所指向前方的建筑物名称，你只要按着摄像头对准位置走过去就可以了。而摄像头的功能就是把虚拟的位置和现实世界联系起来了。<br>	
+				</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="background-image: url(<%= asset_path('app/augmented-reality-apps.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; margin-bottom: 0; margin-top: 3rem;">
+</div>
+
+<section>
+	<div class="containerapp">
+		<div class="container" style="width: auto;">
+			<div class="row">
+				<% if I18n.locale == :en %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">motion sensing game</h2>
+				<p>Motion sensing game develops with input devices of electronic games,among which arcade game contributes the most.<br><br>
+				The original input method of electronic games came from computer keyboard,then becomes joystick and console. With the technical development and needs of players,the relevant games companies released professional and specified input devices and large arcade games.For example, the well-known Duck Hunt Shoot Out of FC were the original model of motion sensing game which needs lightgun support.Another example is the VR police of arcade game,which needs player to hold lightgun,cooperate with arm,waist to play, also is the basis of motion sensing game.<br>
+				</p>
+				<% else %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">体感游戏</h2>
+				<p>体感游戏的发展是由电子游戏输入设备地进步展开的。而街机游戏可以说是体感游戏贡献者。电子游戏输入方式来自于计算机键盘，后来衍生出的专业电子游戏机以手柄或操作台的形式来进行电子游戏内容。后来，随着科技进步以及增强玩家游戏体验的需要，相关的游戏公司开发出了专业化，特异化的游戏输入设备以及大型街机游戏项目。例如，大家所熟知的FC(任天堂红白机)上我们玩到的打野鸭，打飞碟这种需要游戏光枪支援的游戏就成为了体感游戏的原始雏形。包括于街机中为大家所熟知的VR战警这种需要玩家手持光枪配合手臂，腰等肢体才能进行的游戏都可以理解为体感游戏的基础。<br>
+				</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="background-image: url(<%= asset_path('app/vrcon.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; margin-bottom: 0; margin-top: 3rem;">
+</div>
+
+
+<div class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+	<hr class="my-4">	
+</div>
+
+
+<div style="background-image: url(<%= asset_path('app/nologocar.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; text-align: center;">
+	<% if I18n.locale == :en %>
+	<h2 class="centered2">automobile</h2>
+	<% else %>
+	<h2 class="centered2">汽车工业</h2>
+	<% end %>
+</div>
+<section>
+	<div class="containerapp">
+		<div class="container" style="width: auto;">
+			<div class="row">
+				<% if I18n.locale == :en %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">ESP</h2>
+				<p>Electronic Stability Control (ESC), also referred to as electronic stability program (ESP) or dynamic stability control (DSC), is a computerized technology that improves the safety of a vehicles stability by detecting and reducing loss of traction (skidding). When sensor ( Gyroscope ) detects loss of steering control, ESC automatically applies the brakes to help "steer" the vehicle where the driver intends to go. Braking is automatically applied to wheels individually, such as the outer front wheel to counter oversteer or the inner rear wheel to counter understeer. Some ESC systems also reduce engine power until control is regained. ESC does not improve a vehicles cornering performance; instead, it helps to minimize the loss of control. According to Insurance Institute for Highway Safety and the U.S. National Highway Traffic Safety Administration, one-third of fatal accidents could be prevented by the use of the technology.
+				<br>
+				<br>
+				Numerous studies around the world confirm that ESC is highly effective in helping the driver maintain control of the car, thereby saving lives and reducing the severity of crashes. In the fall of 2004 in the U.S., the National Highway and Traffic Safety Administration confirmed the international studies, releasing results of a field study in the U.S. of ESC effectiveness. The NHTSA in United States concluded that ESC reduces crashes by 35%. Additionally, Sport utility vehicles (SUVs) with stability control are involved in 67% fewer accidents than SUVs without the system. The United States Insurance Institute for Highway Safety (IIHS) issued its own study in June 2006 showing that up to 10,000 fatal US crashes could be avoided annually if all vehicles were equipped with ESC The IIHS study concluded that ESC reduces the likelihood of all fatal crashes by 43%, fatal single-vehicle crashes by 56%, and fatal single-vehicle rollovers by 77–80%.
+				<br>
+				<br>
+				ESC is described as the most important advance in auto safety by many experts. including Nicole Nason, Administrator of the NHTSA, Jim Guest and David Champion of Consumers Union of the Fédération Internationale de lAutomobile (FIA), E-Safety Aware, Csaba Csere, editor of Car and Driver, and Jim Gill, long time ESC proponent of Continental Automotive Systems The European New Car Assessment Program (EuroNCAP) "strongly recommends" that people buy cars fitted with stability control.
+				<br>
+				<br>
+				The IIHS requires that a vehicle must have ESC as an available option in order for it to qualify for their Top Safety Pick award for occupant protection and accident avoidance.<br></p>
+				<% else %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">车身电子稳定系统</h2>
+				<p>车身电子稳定系统（ESP），是一种可以控制驱动轮，也可以控制从动轮的，包含ABS（防抱死刹车系统）及ASR（防侧滑系统）的汽车防滑装置。它通过对从各传感器传来的车辆行驶状态信息进行分析，然后向ABS、ASR发出纠偏指令，来帮助车辆维持动态平衡。ESP可以使车辆在各种状况下保持最佳的稳定性，在转向过度或转向不足的情形下效果更加明显。<br>ESP系统由控制单元及转向传感器（监测方向盘的转向角度）、车轮传感器（监测各个车轮的速度转动）、侧滑传感器（监测车体绕垂直轴线转动的状态）、横向加速度传感器（监测汽车转弯时的离心力）等组成。
+				<br>
+				<br>
+				<b style="color:#3B4637;font-size:18px;">组成部分</b><br><br>
+
+				<b>传感器</b><br>
+				传感器包括转向传感器、车轮传感器、侧滑传感器、横向加速度传感器、方向盘油门刹车踏板传感器等。这些传感器负责采集车身状态的数据。<br><br>
+
+				<b>ESP电脑</b><br>
+				将传感器采集到的数据进行计算，算出车身状态然后跟存储器里面预先设定的数据进行比对。当电脑计算数据超出存储器预存的数值，即车身临近失控或者已经失控的时候则命令执行器工作，以保证车身行驶状态能够尽量满足驾驶员的意图。<br><br>
+
+				<b>执行装置</b><br>
+				简单的说，ESP的执行器是4个车轮的刹车系统，其实ESP就是帮驾驶员踩刹车。和没有ESP的车不同的是，装备有ESP的车其刹车系统具有蓄压功能。简单的说蓄压就是电脑可以根据需要，在驾驶员没踩刹车的时候替驾驶员向某个车轮的制动油管加压好让这个车轮产生制动力。<br><br>
+
+				<b>沟通装置</b><br>
+				仪表盘上的ESP灯。
+				<br>
+				<br>
+				<b style="color:#3B4637; font-size:18px;">作用机理</b><br><br>
+				ESP的作用就是当驾驶员操纵汽车超过极限值后电脑自动介入修正驾驶的。电脑控制车辆运动的手段有两个：第一是控制节气阀收油，衰减汽车动力，让速度降下来；第二个手段就是对某些车轮进行制动，让汽车的速度能够减小到极限值以内。那么电脑怎么样知道车辆的运动状况是否接近极限呢？这就需要两套传感器为电脑搜集行车信息。一套是方向盘转向角度传感器；一套是车轮转速传感器（每个车轮上都装有一个）。前者用来收集驾驶者的转向意图，后者是用来监测车辆运动状况。当方向盘转向角度传感器检测到驾驶员的转向角度以后，就会通知ESP电脑；与此同时，各个车轮转速传感器测得的车轮转速信息也会传递到ESP电脑。电脑可以根据各个车轮的转速计算出车辆的实际运动轨迹。如果实际运动轨迹，跟理论运动轨迹有区别，或者检测出某个车轮打滑（丧失抓地力），电脑就会首先通知节气阀，减小开度（收油）。然后通知制动系统对某个车轮进行制动，来修正运动轨迹。当实际运动轨迹与理论运动轨迹（驾驶员意图）相一致时，ESP自动解除控制。<br>
+				</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="background-image: url(<%= asset_path('app/roads.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; margin-bottom: 0; margin-top: 3rem;">
+</div>
+<section>
+	<div class="containerapp">
+		<div class="container" style="width: auto;">
+			<div class="row">
+				<% if I18n.locale == :en %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">INS</h2>
+				<p>Inertial Navigation System (INS)is a self-contained navigation technique in which measurements provided by accelerometers and gyroscopes are used to track the position and orientation of an object relative to a known starting point, orientation and velocity. Inertial measurement units (IMUs) typically contain three orthogonal rate-gyroscopes and three orthogonal accelerometers, measuring angular velocity and linear acceleration respectively. By processing signals from these devices it is possible to track the position and orientation of a device.
+				<br>
+				<br>
+				INS is a navigation aid that uses a computer, motion sensors (accelerometers) and rotation sensors (gyroscopes) to continuously calculate via dead reckoning the position, orientation, and velocity (direction and speed of movement) of a moving object without the need for external references.It is used on vehicles such as ships, aircraft, submarines, guided missiles, and spacecraft.
+				<br>
+				<br>
+				An INS can detect a change in its geographic position (a move east or north, for example), a change in its velocity (speed and direction of movement), and a change in its orientation (rotation about an axis). It does this by measuring the linear acceleration and angular velocity applied to the system. Since it requires no external reference (after initialization), it is immune to jamming and deception.
+				<br>
+				<br>
+				<b style="font-weight: bold; color:#3B4637;font-size:18px;">Advantages</b><br>
+				<b style="font-weight: bold; color:#3B4637;font-size:18px;">1.</b> INS is a self-contained navigation system with good elusive feature and free from external EMI.<br>
+				<b style="font-weight: bold; color:#3B4637;font-size:18px;">2.</b> Work in the air, earth surface,even under the water in every enviornment and time.<br>
+				<b style="font-weight: bold; color:#3B4637;font-size:18px;">3.</b> Provide location,velocity,course,attitude angle data. Good navigation information continuity and low noise.<br>
+				<b style="font-weight: bold; color:#3B4637;font-size:18px;">4.</b> High rate of data update,short precision and good stability.
+				<br>
+				</p>
+				<% else %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">车载惯性辅助导航</h2>
+				<p>惯性导航系统（INS）惯性导航系统是以陀螺和加速度计为敏感器件的导航参数解算系统，该系统根据陀螺的输出建立导航坐标系，根据加速度计输出解算出运载体在导航坐标系中的速度和位置。<br>
+
+				惯性导航系统（INS，Inertial Navigation System）也称作惯性参考系统，是一种不依赖于外部信息、也不向外部辐射能量（如无线电导航那样）的自主式导航系统。其工作环境不仅包括空中、地面，还可以在水下。惯性导航的基本工作原理是以牛顿力学定律为基础，通过测量载体在惯性参考系的加速度，将它对时间进行积分，且把它变换到导航坐标系中，就能够得到在导航坐标系中的速度、偏航角和位置等信息。<br>
+				惯性导航系统属于推算导航方式，即从一已知点的位置根据连续测得的运动体航向角和速度推算出其下一点的位置，因而可连续测出运动体的当前位置。惯性导航系统中的陀螺仪用来形成一个导航坐标系，使加速度计的测量轴稳定在该坐标系中，并给出航向和姿态角；加速度计用来测量运动体的加速度，经过对时间的一次积分得到速度，速度再经过对时间的一次积分即可得到距离。
+				<br>
+				<br>
+				<b style="color:#3B4637; font-size:18px;">优点</b><br><br>
+				<b>惯性导航系统有如下优点：</b><br>
+				<b>1.</b> 由于它是不依赖于任何外部信息，也不向外部辐射能量的自主式系统，故隐蔽性好，也不受外界电磁干扰的影响；<br>
+				<b>2.</b> 可全天候、全时间地工作于空中、地球表面乃至水下；<br>
+				<b>3.</b> 能提供位置、速度、航向和姿态角数据，所产生的导航信息连续性好而且噪声低；<br>
+				<b>4.</b> 数据更新率高、短期精度和稳定性好。<br>
+				</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="background-image: url(<%= asset_path('app/auto-gps.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; margin-bottom: 0; margin-top: 3rem;">
+</div>
+
+<section>
+	<div class="containerapp">
+		<div class="container" style="width: auto;">
+			<div class="row">
+				<% if I18n.locale == :en %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">Logistics</h2>
+				<p>
+					With the trend of faster, safer, more effecient logistics, rely on the real-time monitoring and control that high performance inertial sensor to logistics object. Inertial sensor plays an important role in vehicle posture monitoring, motion monitoring, induced vibration, even when GPS is inoperable. The unprecedented high precision monitoring which inertial sensor brings is the key application of transportation. Including:
+					<br>
+					<br>
+					<b style="font-weight: bold; color:#3B4637;font-size:18px;">Automobile</b>
+					<br>
+ 					ACS<br>
+					ADAS<br>
+					Inertial Navigation
+					<br>
+					<br>
+					<b style="font-weight: bold; color:#3B4637;font-size:18px;">Airplane</b>
+					<br>
+ 					Inertial Navigation<br>
+					Abration & Vibration Monitoring
+					<br>
+					<br>
+					<b style="font-weight: bold; color:#3B4637;font-size:18px;">Train</b>
+					<br>
+					Stability & Security Monitoring<br>
+					Real-end Accident Avoidance<br>
+					Maintainance management of Abration & Vibration<br>
+				</p>
+				<% else %>
+				<h2 class="text-center" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter; padding-bottom: 2rem; padding-top:3rem;">物流</h2>
+				<p>随着更快、更安全、更高效的物流运输趋势，依赖于高性能惯性传感器对物流载体的实时监视和控制。车辆姿态监控、运动监测、振动感应以及在GPS不可用时的惯性导航都离不开惯性传感器发挥作用。惯性传感器带来前所未有的高精度监测为运输的关键应用领域服务，包括：<br><br>
+					<b>汽车</b><br>
+ 					自动稳定控制系统<br>
+					高级驾驶辅助<br>
+					惯性导航<br>
+					<br>
+					<br>
+					<b>航空</b>
+					<br>
+ 					惯性导航<br>
+					磨损和振动监测<br>
+					<br>
+					<br>
+					<b>火车</b>
+					<br>
+					稳定性和安全性监测<br>
+					防追尾系统<br>
+					磨损和振动检测维修管理<br>
+				</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="background-image: url(<%= asset_path('app/pla.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 400px; margin-bottom: 0; margin-top: 3rem;">
+</div>
+</div>
+
+	<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+		
+
+	/*$(function(){
+		$('.translate').click(function(){
+			var lang = $(this).attr('id');
+
+		$('.lang').each(function(index, element){
+			$(this).text(arrLang[lang][$(this).attr('key')]);
+		});
+	});	
+});*/
+	$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+</body>
+</html>
