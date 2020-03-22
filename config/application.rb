@@ -9,9 +9,11 @@ Bundler.require(*Rails.groups)
 module Senodiabdt
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
-    config.i18n.avaliable_locales = [:en, :"zh-CH"]
-    config.i18n.default_lacale = :"zh-CH"
+    config.i18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
+
+    # config.load_defaults 6.0
+    # config.i18n.avaliable_locales = [:en, :"zh-CH"]
+    config.i18n.default_locale = :"zh-CH"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
