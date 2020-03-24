@@ -61,6 +61,7 @@ GEM
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
     bcrypt (3.1.13)
+    bcrypt_pbkdf (1.0.1)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -102,6 +103,7 @@ GEM
     dotenv-rails (2.7.5)
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
+    ed25519 (1.2.4)
     erubi (1.9.0)
     ffi (1.12.2)
     globalid (0.4.2)
@@ -247,6 +249,7 @@ PLATFORMS
 
 DEPENDENCIES
   actiontext
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   bootsnap (>= 1.4.2)
   byebug
   capistrano (~> 3.11)
@@ -256,6 +259,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   dotenv-rails
+  ed25519 (>= 1.2, < 2.0)
   i18n
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
