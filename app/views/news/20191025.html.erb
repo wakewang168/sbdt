@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Senodia Technologies | 深迪半导体 | 新闻资讯</title>
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+    <a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+      
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+        <li class="nav-item">
+          <a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+        </li>
+        <li class="nav-item">
+          <a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+        </li>
+        <li class="nav-item">
+          <a><%= link_to t('app'), applications_index_path, class: 'nav-link' %></a>
+        </li>
+        <li class="nav-item">
+          <a><%= link_to t('tech'), technology_index_path, class: 'nav-link' %></a>
+        </li>
+        <li class="nav-item active">
+          <a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+        </li>
+        <li class="nav-item">
+          <a><%= link_to t('abt'), about_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+        </li>
+        <%= content_tag :li do %>
+          <a class="lan"><%= link_to "EN", locale: :en %></a>
+        <% end unless current_page?(locale: :en)%>
+        
+        <%= content_tag :li do %>
+          <a class="lan"><%= link_to "中文", locale: :"zh-CH"%></a>
+        <% end unless current_page?(locale: :"zh-CH")%>
+      </ul>
+    </div>
+  </nav>    
+</header>
+
+
+
+  <!--- Image slider -->
+<div style="width: 100vw">
+<div class="jumbotron jumbotron-fluid" style="background-color: rgba(227, 61, 50, 80%)!important; background-color:#E2001A;">
+  	<div class="container text-center">
+  		<h1 style="color: #FFF!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;">
+			<% if I18n.locale == :en %>
+  		 		Senodia Awarded “China Chip” 2019
+  		 	<% else %>
+  		 		深迪半导体摘取2019“中国芯”
+  		 	<% end %>
+  		 </h1>
+  		 <h3 style="color: #FFF!important; text-transform: uppercase; font-size: 24px; font-weight: lighter;">2019-10-25</h3>
+  	</div>
+</div>
+
+<section>
+	<div class="containerapp">
+		<div class="container" style="width: 90vw; min-height: 10rem; margin-top: 3rem;" >
+			<div class="row">
+				<p class="text-left">
+					<% if I18n.locale == :en %>
+  		 				The "China Chip" 14th Conference on Promotion of China IC Industry 2019 was held in Qingdao on October 25-26. The conference was held under the guidance of the Ministry of Industry and Information Technology and organized by the China Electronics and Information Industry Development Research Institute. It is one of the most influential and authoritative industry conferences in integrated circuits in China. During the conference, the award ceremony of the "China Chip" excellent product collection was held, 6-axis inertial measurement unit (IMU) SH2100 of Senodia won "China Chip" outstanding technical innovation product. <br><br>
+  		 				In cooperation with GlobalFoundries, Senodia successfully completed the first 6-axis inertial measurement unit (IMU) SH200Q mass production in China in Q4 2017, and mass production of the iterative 6-axis inertial measurement unit (IMU) SH2100 in 2018 Q4. In October 2019, Senodia, launched the first 6-axis inertial measurement unit (IMU) SH3001 for mobile phones. Senodia has since become the only MEMS company in China that can provide a series of 6-axis inertial measurement units for mobile phones and non-mobile phone applications in the field of consumer electronics.<br><br>
+  		 				Based on the core technology of independent innovation, 6-axis inertial measurement unit (IMU) has complete independent intellectual property rights, integrated with 3-axis MEMS gyroscope and 3-axis MEMS accelerometer, which can provide high-precision real-time angular velocity and linear acceleration data. With excellent temperature stability and high resolution in the working range of -40 ° C to 85 ° C, it is one of the core projects independently developed by Senodia, which has features of high precision, low power consumption, small size, and cost-effective, to achieve import substitution.<br><br>
+  		 				Huang Yan, Senior Director of Senodia Market Development, said: “China Chip” has been the dream and goal of Senodia for many years. This 6-axis inertial measurement unit (IMU) SH2100 is awarded and recognized by government departments, industry experts and market customers. MEMS sensor chips  have been monopolized by international manufacturers for a long time. Therefore, it is a major issue on how to catch up to these manufactures and go beyond that. The core is also the heart. We will continue to work hard to develop and produce more and make better "China Chip" with a Chinese identity and contribute to the realization of the Chinese dream.<br><br>
+
+						Features of 6-axis inertial measurement unit (IMU) SH2100 <br>
+						Gyro range of measurement(°/s)：±125, ±250, ±500, ±1000，±2000<br>
+						Gyro sensitivity(LSB/°/sec)：262，131，65.5，32.8，16.4<br>
+						Accelerometer range of measurement(g)：±2, ±4, ±8, ±16<br>
+						Accelerometer sensitivity(LSB/g)： 16384，8192，4096，2048<br>
+						Package（QFN24）：3.3*3.3*0.9mm³<br><br>
+
+						Features of 6-axis inertial measurement unit (IMU) SH3001<br>
+						Gyro range of measurememt(°/s)：±125, ±250, ±500, ±1000，±2000<br>
+						Gyro sensitivity(LSB/°/sec)：262，131，65.5，32.8，16.4<br>
+						Accelerometer range of measurement(g)：±2, ±4, ±8, ±16<br>
+						Accelerometer sensitivity(LSB/g)： 16384，8192，4096，2048<br>
+						Package（LGA14）：2.5*3.0*0.9mm³<br>
+  		 			<% else %>
+  		 				“中国芯”2019第十四届集成电路产业促进大会于10月25-26号在青岛隆重举行，大会是在国家工业和信息化部指导下，由中国电子信息产业发展研究院举办的全国性集成电路行业盛会，是国内集成电路领域最具影响力和权威性的行业会议之一。大会期间举行了“中国芯”优秀产品征集结果发布仪式，深迪半导体六轴惯性测量单元（IMU）SH2100荣获“中国芯”优秀技术创新产品称号！该奖项评选是经过材料申报、专家评审、秘书处审定、网上公示等严格程序，为历年来竞争最激烈的一届。深迪产品在众多的申报单位中脱颖而出，荣获“中国芯”光荣称号。<br><br>
+  		 				继2017年Q4联合格芯（GlobalFoundries）率先实现国内首款六轴惯性测量单元（IMU） SH200Q量产、 2018年Q4量产了迭代的六轴惯性测量单元（IMU） SH2100后, 深迪半导体又于2019年10月推出国内首款适用手机的六轴惯性测量单元（IMU） SH3001。至此，深迪半导体成为国内仅有在消费电子领域可提供适用于手机类和非手机类的六轴惯性测量单元系列产品的MEMS公司。<br><br>
+  		 				深迪的六轴惯性测量单元（IMU）基于自主创新的核心技术，拥有完全自主知识产权，集成三轴MEMS陀螺仪与三轴MEMS加速度计于一体，能提供高精度的实时角速度与线性加速度数据，具有出色的温度稳定性，在-40℃到85℃的工作范围内能保持高分辨率，是深迪半导体自主研发的核心项目之一，高精度、低功耗、小尺寸、低成本、高性价比，实现了进口替代。<br><br>
+  		 				深迪半导体市场拓展高级总监黄岩表示：“中国芯”是深迪人多年来的梦想和奋斗目标，这次六轴惯性测量单元（IMU） SH2100获奖，是政府部门、行业专家、市场客户对我们技术产品的认可。长期以来，MEMS传感器芯片被国际大厂垄断，如何从追赶到并跑到超越，是我们一直在思考的重大课题。芯，也是心，我们将再接再厉，怀着一颗中国心，研发生产更多更好的“中国芯”，为实现中国梦作贡献。<br>
+<br>
+						六轴惯性测量单元(IMU)SH2100主要参数：<br>
+						陀螺仪量程(°/s)：±125， ±250， ±500，±1000，±2000<br>
+						陀螺仪灵敏度(LSB/°/s)：262，131，65.5，32.8，16.4<br>
+						加速度计量程(g): ±2，±4， ±8， ±16<br>
+						加速度计灵敏度(LSB/g):  16384，8192，4096，2048<br>
+						封装（QFN24）：3.3*3.3*0.9mm³<br><br>
+
+						六轴惯性测量单元(IMU)SH3001主要参数：<br>
+						陀螺仪量程(°/s)：±125， ±250，±500，±1000，±2000<br>
+						陀螺仪灵敏度(LSB/°/s)：262，131，65.5，32.8，16.4<br>
+						加速度计量程(g): ±2，±4， ±8， ±16<br>
+						加速度计灵敏度(LSB/g):  16384，8192，4096，2048<br>
+						封装（LGA14）：2.5*3.0*0.9mm³<br>
+
+  		 			<% end %>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<div style="background-image: url(<%= asset_path('products/cc19.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+<% if current_user %>
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_index_path %>
+<% end%>
+
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+          <%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+        </div>
+        <div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+          <p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+          <p>沪ICP备10005581号</p>
+        
+          <p><%= t('cp') %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script
+  defer
+  src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+  crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

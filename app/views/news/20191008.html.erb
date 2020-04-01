@@ -61,12 +61,9 @@
 <div class="jumbotron jumbotron-fluid" style="background-color: rgba(227, 61, 50, 80%)!important; background-color:#E2001A;">
   	<div class="container text-center">
   		<h1 style="color: #FFF!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;">
-			<% if I18n.locale == :en %>
-  		 		<%= @news.title %>
-  		 	<% else %>
-  		 		<%= @news.title_cn %>
-  		 	<% end %>
+			深迪半导体推出国内首款适用手机的六轴惯性传感器 成就惯性“中国芯”
   		 </h1>
+  		 <h3 style="color: #FFF!important; text-transform: uppercase; font-size: 24px; font-weight: lighter;">2019-10-08</h3>
   	</div>
 </div>
 
@@ -74,24 +71,30 @@
 	<div class="containerapp">
 		<div class="container" style="width: 90vw; min-height: 10rem;" >
 			<div class="row">
-				<p class="text-center">
-					<% if I18n.locale == :en %>
-  		 				<%= @news.body %>
-  		 			<% else %>
-  		 				<%= @news.body_cn %>
-  		 			<% end %>
+				<p class="text-left">
+					伴随着祖国70周年华诞的前进步伐，深迪半导体自主研发的六轴IMU传感器SH3001芯片于2019年10月推出工程样品，明年一季度量产，主要应用于智能手机、IOT。手机作为全球最重要的消费类电子产品，在5G 商用智能时代里，对芯片性能和功耗要求更高，深迪半导体针对智能手机、智能家居等IOT这一重要消费场景，贴近用户需求，集中人力物力成功研发SH3001，该芯片迎合IOT大趋势，克服了MEMS、ASIC设计研发带来的强挑战，适应了MEMS工艺制程的高要求，极大提升手机整体性能，给用户带来良好的使用体验，为促进万物互联、传感智慧生活提供了应用解决方案。<br><br>
+					六轴IMU传感器SH3001集成三轴MEMS陀螺仪与三轴MEMS加速度计于一体，尺寸小、功耗低，能提供高精度的实时角速度与线性加速度数据，实现姿态检测，具有出色的温度稳定性，在-40°C到85°C的工作范围内能保持高分辨率，集中体现了深迪十一年来的技术成果。典型应用于消费类电子例如智能手机，用于实现AR、光学防抖、屏幕旋转、计步、环景照相和各类游戏等众多功能。同时可广泛应用于非手机领域的四旋翼无人机的姿态控制，智能扫地机的路径规划，翻页笔的空中鼠标功能，游戏手柄的体感游戏，平衡车的平衡控制，智能家居和智能运动等方面。<br><br>
+					深迪半导体董事长兼CEO邹波表示，深迪半导体作为国内领先的商用MEMS惯性传感器厂商，厚积薄发，十余年专注于MEMS陀螺仪设计和工艺的研发。深迪六轴IMU已经推出了针对非手机市场的SH1100、SH2100产品线，以及现在推出的针对手机等智能终端的SH3001产品线。这极大地完善了深迪在MEMS惯性领域的产品系列布局。长期以来，MEMS芯片被国际大厂垄断，SH3001的推出实现了MEMS IMU的进口替代，是国内厂商从追赶者到并跑者的标志，填补了国内市场空缺，增加了客户端供应链的选择弹性。之前已量产SH2100（非手机类）、SH1100（非手机类），得到了政府部门、行业专家、社会公众的一致认可，荣获2019世界人工智能大会创新成果奖、中国半导体创新技术产品奖。这次推出SH3001，国内首发可用于手机、IOT，相信会延续良好的市场表现，助力智能时代发展。<br><br>
+					六轴IMU SH3001主要参数<br>
+					陀螺仪量程(°/s)：±125， ±250，±500，±1000，±2000<br>
+					陀螺仪灵敏度(LSB/°/s)：262，131，65.5，32.8，16.4<br>
+					加速度计量程(g): ±2，±4， ±8， ±16<br>
+					加速度计灵敏度(LSB/g):  16384，8192，4096，2048<br>
+					封装：LGA-14, 2.5*3.0*0.9mm³<br><br>
+
+					六轴IMU SH3001工程样品联系方式：<br>
+					公司名称：深迪半导体（上海）有限公司<br>
+					联系人：黄岩<br>
+					联系电话：021-50276900
+
 				</p>
 			</div>
 		</div>
 	</div>
 </section>
 </div>
-
-<% if current_user %>
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
-<% end%>
-
+<div style="background-image: url(<%= asset_path('products/20191011.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
 
   <!-- Footer -->
 <footer class="footer">

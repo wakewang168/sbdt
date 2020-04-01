@@ -25,7 +25,8 @@ class NewsController < ApplicationController
   # POST /news.json
   def create
     @news = News.new(news_params)
-
+    p @news
+    p "============================"
     respond_to do |format|
       if @news.save
         format.html { redirect_to @news, notice: 'News was successfully created.' }
@@ -64,7 +65,7 @@ class NewsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_news
-      @news = News.find(params[:id])
+      @news = News.with_rich_text_body_and_embeds.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

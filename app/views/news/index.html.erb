@@ -82,22 +82,22 @@
     <div class="head1">
       <h1 style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;"></h1>
     </div>
-    <main>
-      <% @news.each do |news| %>
-      <div class="singlePost">
-        <div class="blog-post_info">
-          
-          <h3 style="color: #616161!important;font-weight: lighter;"><%= news.title %></h3>
-          
-          <a><%= link_to t('rm'), news, class: 'btn btn-primary' %></a>
-            <% if current_user %>
-             <%= link_to 'Edit', edit_news_path(news) %>
-             <%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <%end%>
-        </div>
+    <div class="card-wrapper">
+      <div class="blog-card">
+        <%= image_tag "products/cc19.jpg", class: 'card-img'%>
+        <% if I18n.locale == :en %>
+        <h1 class="card-title">China Chip 2019</h1>
+        <% else %>
+        <h1 class="card-title">深迪半导体摘取2019“中国芯”</h1>
+        <% end %>
+        <a><%= link_to t('rm'), news_20191025_path, class: 'btn btn-primary' %></a>
       </div>
-      <% end%>
-    </main>
+      <div class="blog-card">
+        <%= image_tag "products/20191011.jpg", class: 'card-img'%>
+        <h1 class="card-title" style="width: 30vw;">深迪半导体推出国内首款适用手机的六轴惯性传感器 成就惯性“中国芯”</h1>
+
+        <a><%= link_to t('rm'), news_20191008_path, class: 'btn btn-primary' %></a>
+      </div>
   </div>
 </div>
 
@@ -116,13 +116,11 @@
 
 
   <!-- Two Column Product Section  x3 -->
-<% if current_user %>
-<%= link_to 'New Post', new_news_path %>
-<% end%>
 
+</div>  
 <div style="background-image: url(<%= asset_path('app/white.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 40vh;">
 </div>
-</div>  
+ 
 
   <!-- Footer -->
 <footer class="footer">
