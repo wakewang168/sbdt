@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get 'products/SZ007A'
     get 'products/SZ030H'
     get 'products/SZ030HS'
+    get 'products/SH3011'
     get 'news/20191025'
     get 'news/20191008'
     root to: 'home#index'

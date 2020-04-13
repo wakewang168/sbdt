@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Senodia Technologies | 深迪半导体 | SH3001</title>
+	<meta name="description" content="SH3001 is an inertial measurement unit, integrated with 3-axis gyroscope and 3-axis accelerometer.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<!--- Navbar --->
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
+				<li class="nav-item">
+					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item active">
+					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('app'), applications_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('tech'), technology_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
+				</li>
+				<li class="nav-item">
+					<a><%= link_to t('abt'), about_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
+				</li>
+				<%= content_tag :li do %>
+					<a class="lan"><%= link_to "EN", locale: :en %></a>
+				<% end unless current_page?(locale: :en)%>
+				
+				<%= content_tag :li do %>
+					<a class="lan"><%= link_to "中文", locale: :"zh-CH"%></a>
+				<% end unless current_page?(locale: :"zh-CH")%>
+			</ul>
+		</div>
+	</nav>		
+</header>	
+
+<div class="container">
+	<div class="row justify-content-around align-items-center">
+		<%= image_tag "products/SH3011.png", style: 'width: 10rem;display: block;
+    margin:0;'%>
+		<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+			<div class="info-box2" style="margin-bottom:5rem;margin-top: 3rem;">
+				<div class="row" style="margin-bottom:1rem;">
+					<div class="col">
+						<h1 style="color:rgba(0,0,0,80%);font-weight:bold;font-size: 38px;">SH3011</h1>
+					</div>
+				</div>
+				<div class="row">
+					<% if I18n.locale == :en %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Description</h3>
+						<p style="font-size: 16px;">SH3011 is an IMU + force (stress and strain) sensor developed for the TWS hearables market. It is the world ’s first MEMS inertial sensor that incorporates stress measurement. It has the effect of detecting stress and not affecting the output of the IMU itself, bringing users a better audiovisual experience.</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">Package & Size</h3>
+						<p style="font-size: 16px;">Package：14 Pins LGA<br>
+Size：2.5×3.0×0.9mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">Features</h3>
+						<p style="font-size: 16px;">Gyro range of measurememt(°/s)：±125， ±250， ±500，±1000，±2000<br>
+Gyro sensitivity(LSB/°/sec)：262，131，65.5，32.8，16.4<br>
+Accelerometer range of measurement(g)： ±2，±4， ±8， ±16<br>
+Accelerometer sensitivity(LSB/g)：  16384，8192，4096，2048<br>
+Stress range (με): 2000<br>
+Stress sensitivity (LSB / με): 5 or 10</p>
+						
+						<h3 style="color:#E2001A!important;font-size: 20px;">Applications</h3>
+						<p style="font-size: 16px;">TWS headphones<br>
+						Smart door lock<br>
+						Other applications of simultaneous detection of inertia and stress</p>
+					</div>
+					<% else %>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品简介</h3>
+						<p style="font-size: 16px;">SH3011是一款针对TWS耳机市场开发的IMU+force（应力应变）传感器，是全球首款融合应力测量的MEMS惯性传感器，具有检测应力且不影响IMU本身输出的效果，给用户带来更好的视听体验。</p>
+						<h3 style="color:#E2001A!important;font-size: 20px;">封装形式和尺寸</h3>
+						<p style="font-size: 16px;">封装：14 Pins LGA<br>
+						尺寸：2.5×3.0×0.9mm³</p>
+					</div>
+					<div class="col">
+						<h3 style="color:#E2001A!important;font-size: 20px;">产品特性</h3>
+						<p style="font-size: 16px;">陀螺仪量程(dps)：±125， ±250， ±500，±1000，±2000<br>
+						陀螺仪灵敏度(LSB/°/s)：262，131，65.5，32.8，16.4<br>
+						加速度计量程(g): ±2，±4， ±8， ±16<br>
+						加速度计灵敏度(LSB/g):  16384，8192，4096，2048<br>
+						应力量程（με）：2000<br>
+						应力灵敏度（LSB/με）：5 or 10</p>
+
+						<h3 style="color:#E2001A!important;font-size: 20px;">典型应用</h3>
+						<p style="font-size: 16px;">TWS耳机<br>
+						智能门锁<br>
+						其他惯性及应力同时检测的应用</p>
+					</div>
+					<% end %>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End of datasheet section -->
+
+
+<div style="background-image: url(<%= asset_path('app/tws.jpg')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 50vh;">
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col footer-info text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<%= image_tag "logos/lightlogo.PNG", class: 'footerimg'%> 
+				</div>
+				<div class="col footer-contact text-left" style="padding-top: 3rem; padding-bottom: 2rem;">
+					<p><%= t('add') %><br><%= t('email') %><br><%= t('tel') %><br><%= t('fax') %></p>
+					<p>沪ICP备10005581号</p>
+				
+					<p><%= t('cp') %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	<script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
