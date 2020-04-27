@@ -364,6 +364,12 @@ background-color:rgba(227, 61, 50, 80%);
   .site-content {
     height: 550px;
   }
+  .awardslog {
+    width: 10rem;
+  }
+   /*.pgti {
+    font-size: 6rem;
+  }*/
 }
 
 .card-img-overlay {
@@ -388,6 +394,18 @@ background-color:rgba(227, 61, 50, 80%);
   .site-content {
     height: 450px;
   }
+   .pgti {
+    font-size: 3rem!important;
+  }
+  .pgp {
+    font-size: 1rem!important;
+  }
+  .awardslog {
+    width: 7rem;
+  }
+  .awarow {
+    flex-direction: row!important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -404,6 +422,18 @@ background-color:rgba(227, 61, 50, 80%);
   }
   .site-content {
     height: 350px;
+  }
+  .pgti {
+    font-size: 2rem!important;
+  }
+  .pgp {
+    font-size: .8rem!important;
+  }
+  .awarow {
+    flex-direction: row!important;
+  }
+  .awardslog {
+    width: 4rem;
   }
   
 }
