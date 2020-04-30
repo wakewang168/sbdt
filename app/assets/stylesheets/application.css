@@ -367,6 +367,27 @@ background-color:rgba(227, 61, 50, 80%);
   .awardslog {
     width: 10rem;
   }
+  .nav-item {
+  color: rgba(0, 0, 0, 0.8)!important;
+  padding: 0rem .7rem 0rem .7rem!important;
+  /*font-size: .8rem!important;*/
+}
+ .pgti2 {
+    font-size: 35px!important;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.8);
+     /*font-size: .8rem!important;*/
+  } 
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    /*color: #153B63!important;*/
+    color:#3B4637!important;
+    /*border-bottom: 3px solid #153B63;*/
+    border-bottom: 3px solid #3B4637;
+    /*font-size: .8rem!important;*/
+}
    /*.pgti {
     font-size: 6rem;
   }*/
@@ -397,6 +418,9 @@ background-color:rgba(227, 61, 50, 80%);
    .pgti {
     font-size: 3rem!important;
   }
+  .pgti2 {
+    font-size: 35px!important;
+  }
   .pgp {
     font-size: 1rem!important;
   }
@@ -406,6 +430,24 @@ background-color:rgba(227, 61, 50, 80%);
   .awarow {
     flex-direction: row!important;
   }
+  .nav-item {
+  color: rgba(0, 0, 0, 0.8)!important;
+  padding: 0rem .7rem 0rem .7rem!important;
+  /*font-size: .4rem!important;*/
+}
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.8);
+     /*font-size: .4rem!important;*/
+  } 
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    /*color: #153B63!important;*/
+    color:#3B4637!important;
+    /*border-bottom: 3px solid #153B63;*/
+    border-bottom: 3px solid #3B4637;
+    /*font-size: .4rem!important;*/
+}
 }
 
 @media (max-width: 576px) {
@@ -426,6 +468,13 @@ background-color:rgba(227, 61, 50, 80%);
   .pgti {
     font-size: 2rem!important;
   }
+  .pgti2 {
+    font-size: 1.6rem!important;
+    
+  }
+   .pgti1 {
+    font-size: 3rem!important;
+  }
   .pgp {
     font-size: .8rem!important;
   }
@@ -434,6 +483,40 @@ background-color:rgba(227, 61, 50, 80%);
   }
   .awardslog {
     width: 4rem;
+  }
+}
+@media (max-width: 470px) {
+  .site-title {
+    font-size: 20px;
+    width: 60%;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem; 
+  }
+  .site-desc {
+    font-size: 14px;
+    width: 60%;
+    padding-left: 1.5rem;
+  }
+  .site-content {
+    height: 350px;
+  }
+  .pgti {
+    font-size: 2rem!important;
+  }
+  .pgt2 {
+    font-size: 1.6rem!important;
+  }
+   .pgti1 {
+    font-size: 3rem!important;
+  }
+  .pgp {
+    font-size: .8rem!important;
+  }
+  .awarow {
+    flex-direction: row!important;
+  }
+  .awardslog {
+    width: 3.8rem;
   }
   
 }
