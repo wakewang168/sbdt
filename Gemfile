@@ -10,6 +10,8 @@ gem 'pg'
 
 gem 'meta-tags'
 
+gem 'bootstrap', '~> 4.3.1'
+
 gem 'dotenv-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'

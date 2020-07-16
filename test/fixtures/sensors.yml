@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  part_num: MyString
+  desc: MyText
+  desc_cn: MyText
+  features: MyText
+  feature_cn: MyText
+  ps: MyText
+  ps_cn: MyText
+  appl: MyText
+  appl_cn: MyText
+
+two:
+  part_num: MyString
+  desc: MyText
+  desc_cn: MyText
+  features: MyText
+  feature_cn: MyText
+  ps: MyText
+  ps_cn: MyText
+  appl: MyText
+  appl_cn: MyText
