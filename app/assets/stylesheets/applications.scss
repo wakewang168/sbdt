@@ -7,6 +7,21 @@ $color_3: #000;
 $background_color_1: #fff;
 $background_color_2: #FFF;
 $background_color_3: #E2001A;
+.nav-item {
+  color: rgba(0, 0, 0, 0.8)!important;
+  padding: 0rem .7rem 0rem .7rem!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.8);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    /*color: #153B63!important;*/
+    color:#3B4637!important;
+    /*border-bottom: 3px solid #153B63;*/
+    border-bottom: 3px solid #3B4637;
+}
 
 /**,
 *::before,

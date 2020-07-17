@@ -1,0 +1,65 @@
+<%= form_with(model: sensor, local: true) do |form| %>
+  <% if sensor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sensor.errors.count, "error") %> prohibited this sensor from being saved:</h2>
+
+      <ul>
+        <% sensor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :part_num %>
+    <%= form.text_field :part_num %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc %>
+    <%= form.text_area :desc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc_cn %>
+    <%= form.text_area :desc_cn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :features %>
+    <%= form.text_area :features %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feature_cn %>
+    <%= form.text_area :feature_cn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ps %>
+    <%= form.text_area :ps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ps_cn %>
+    <%= form.text_area :ps_cn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appl %>
+    <%= form.text_area :appl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appl_cn %>
+    <%= form.text_area :appl_cn %>
+  </div>
+  <div class="field">
+    <%= form.select :category_id, Category.all.map {|c| [c.category, c.id]} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

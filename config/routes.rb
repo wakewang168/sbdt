@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
+  resources :categories
+  resources :sensors
+  resources :solutions
   # scope "(:locale)", locale: /en|"zh-CH"/ do 
-    get 'technology/index'
-    get 'about/index'
-    get 'applications/index'
-    get 'products/index'
+    resources :technology
+    # get 'technology/index'
+    # get 'about/index'
+    resources :about
+    # get 'applications/index'
+    resources :applications
+    resources :products
+    # get 'products/index'
     get 'products/IMU445'
     get 'products/SH2100'
     get 'products/SH3001'

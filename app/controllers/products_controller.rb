@@ -1,7 +1,11 @@
 class ProductsController < ApplicationController
   def index
+
   end
 
+  def show
+  end 
+  
   def IMU445
   end
 

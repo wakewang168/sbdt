@@ -12,46 +12,7 @@
 <body>
 <!--- Navbar --->
 
-<header>
-	<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
-		<a><%= image_tag "logos/senodia-logo-website.png", class: 'navbar-brand'%></a>
-		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-			
-			
-		<div class="collapse navbar-collapse" id="navbarMenu">
-			<ul class="navbar-nav ml-auto" style="margin-right: 5rem;">
-				<li class="nav-item active">
-					<a><%= link_to t('home'), root_path, class: 'nav-link' %></a>
-				</li>
-				<li class="nav-item">
-					<a><%= link_to t('pro'), products_index_path, class: 'nav-link' %></a>
-				</li>
-				<li class="nav-item">
-					<a><%= link_to t('app'), applications_index_path, class: 'nav-link' %></a>
-				</li>
-				<li class="nav-item">
-					<a><%= link_to t('tech'), technology_index_path, class: 'nav-link' %></a>
-				</li>
-				<li class="nav-item">
-					<a><%= link_to t('new'), news_index_path, class: 'nav-link' %></a>
-				</li>
-				<li class="nav-item">
-					<a><%= link_to t('abt'), about_index_path, class: 'nav-link', style: "padding-right:5rem;" %></a>
-				</li>
-				<%= content_tag :li do %>
-					<%= link_to "EN", locale: :en %>
-				<% end unless current_page?(locale: :en)%>
-				
-				<%= content_tag :li do %>
-					<%= link_to "中文", locale: :"zh-CH"%>
-				<% end unless current_page?(locale: :"zh-CH")%>
-			</ul>
-		</div>
-	</nav>		
-</header>	
+
 
 	<!--- Image slider -->
 <!-- <main> -->
@@ -65,7 +26,7 @@
 			</div>
 		</div>
 	</div> -->
-<div style="background-image: url(<%= asset_path('app/vr1.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 600px; text-align: center;">
+<div style="background-image: url(<%= asset_path('app/v1.png')%>); background-position: center; background-size: cover; width: 100%; min-width: 100vw; height: 600px; text-align: center;">
  	<!-- <h2 class="centered"><%= t('splash') %></h2> -->
 </div>
 
@@ -82,7 +43,7 @@
 				<div class="col-sm-6 text-left" style="padding-left: 5rem;">
 					<h1 class="pgti2" style="color: #E2001A!important; text-transform: uppercase; font-size: 50px; font-weight: lighter;"><%= t('pro2') %></h1>
 					<p class="pgp" style="color: rgba(0,0,0,80%);"><%= t('prodes') %></p>
-					<a><%= link_to "产品中心", products_index_path, class: 'btn btn-primary' %></a>
+					<a><%= link_to "产品中心", products_path, class: 'btn btn-primary' %></a>
 				</div>
 			</div>
 		</div>
